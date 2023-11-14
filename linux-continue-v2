@@ -38,11 +38,11 @@ script name: posargs
 
 #!/bin/bash
 
-echo '$0' "$0" ----> 0
-echo '$1' "$1" ----> 1
-echo '$2' "$2" ----> 2
-echo '$@' "$@" ----> @
-echo '$*' "$*" ----> *
+echo '$0' "$0" ----> 0 [your directory to script]
+echo '$1' "$1" ----> 1 [first argument]
+echo '$2' "$2" ----> 2 [second argument]
+echo '$@' "$@" ----> @ [means all arguments you input]
+echo '$*' "$*" ----> * [means all arguments you input]
 
 if you write: ./posargs dog cat house
 It will print out:
@@ -53,3 +53,27 @@ $2 is cat
 $@ is dog cat horse
 %* is dog cat horse
 --------------------------------------
+
+Load files using while read loop ---->
+--------------EXAMPLE----------------
+script name: whileread
+
+#!/bin/bash
+
+while IFS= read -r LINE; do
+  echo "$LINE"
+done < "$1"
+-------------------------------------
+
+If you write: ./whileread /etc/passwd ---> You will receive an information of the file where you able to read it
+
+-------------- ADVANCED EXAMPLE----------------
+script name: passarray
+
+#!/bin/bash
+                                [Does the same action as load file using while read loop method.]
+declare -a passarray
+mapfile passarray < "$1"
+echo ${passarray[@]}
+-------------------------------------
+
