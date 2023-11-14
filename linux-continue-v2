@@ -5,10 +5,51 @@
 1. bash -x ~/bin/script.sh [--> script.sh is the file name of the [script]] (uses the debugger for entire of the script)
 2. using second option only allows us to debug only a portion of the script. By turning on --> {set -x} and off --> {set +x}.
 
-[[EXAMPLE]]
+-----------------EXAMPLE---------------------
 #!/bin/bash
 set -x [This sex -x will {turn-on} the debugger]
 for i in {1..10} ;do
   echo $1
 done
 set +x [This will {turn-off} the debugger]
+---------------------------------------------
+
+Bash variable has 4 scopes:
+1. Environmental variables - The entire OS can see, this variables are set in the system when it starts
+2. Variables in scripts - Which can be seen by any function, command or in the script. Standard var: VAR=10
+3. Variables that are exported - All sub processes and sub shells run by the script.
+---------------EXAMPLE---------------
+VAR=10
+export VAR [export variable]
+-------------------------------------
+
+4. Local Variables
+--------------EXAMPLE----------------
+testfunction()
+{
+  local DATA
+  echo $DATA
+}
+-------------------------------------
+
+Script example of using positional arguments -->
+--------------EXAMPLE----------------
+script name: posargs
+
+#!/bin/bash
+
+echo '$0' "$0" ----> 0
+echo '$1' "$1" ----> 1
+echo '$2' "$2" ----> 2
+echo '$@' "$@" ----> @
+echo '$*' "$*" ----> *
+
+if you write: ./posargs dog cat house
+It will print out:
+--------------------------------------
+$0 is [your/script/directory/location]
+$1 is dog
+$2 is cat
+$@ is dog cat horse
+%* is dog cat horse
+--------------------------------------
