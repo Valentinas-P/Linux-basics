@@ -77,3 +77,13 @@ mapfile passarray < "$1"
 echo ${passarray[@]}
 -------------------------------------
 
+Promt for input --->
+--------------EXAMPLE----------------
+#!/bin/bash
+                                         [Asks for the user to input data, it prints out your name is "name"]
+                                         Read options: -r [Backslash is not an escape character],
+                                                       -t [Time out if reading from stdin], 
+                                                       -s [Don't echo typed characters]
+read -p "What's is your name" username
+echo "Your name is $username"
+-------------------------------------
