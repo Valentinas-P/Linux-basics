@@ -145,3 +145,13 @@ case $AGE in
             *) echo "That doesn't seem to be an age" [if any of the conditions didn't match then displays this message]
 esac
 -------------------------------------
+Numeric Comparison Operators ------>
+if [[ 1 -lt 5 ]] ['lt' stands for less than]
+if [[ 1 -gt 5 ]] ['gt' stands for greater than]
+if [[ 1 -eq 5 ]] ['eq' stands for equal]
+if [[ 1 -le 5 ]] ['le' stands for less than or equal]
+if [[ 1 -ge 5 ]] ['ge' stands for greater than or equal]
+Not Numeric Comparison Operators ----->
+if [[ 1 > 5 ]] ['>' greater than]
+if [[ 1 < 5 ]] ['<' less than]
+if [[ 1 = 5 ]] ['=' equal]
