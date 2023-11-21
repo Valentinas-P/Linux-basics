@@ -151,11 +151,40 @@ if [[ 1 -gt 5 ]] ['gt' stands for greater than]
 if [[ 1 -eq 5 ]] ['eq' stands for equal]
 if [[ 1 -le 5 ]] ['le' stands for less than or equal]
 if [[ 1 -ge 5 ]] ['ge' stands for greater than or equal]
-Not Numeric Comparison Operators ----->
+Not Numeric Comparison Operators (String)----->
 if [[ 1 > 5 ]] ['>' greater than]
 if [[ 1 < 5 ]] ['<' less than]
 if [[ 1 = 5 ]] ['=' equal]
-
+--------------EXAMPLE----------------
+String Comparisons ----->
+if [[ dog = cat ]] [equality]
+if [[ dog != cat ]] [inequality]
+if [[ 4 = 4 ]] [Character(string) 4 not the number 4]
+if [[ -z $VAR ]] [['-z' means zero lenght] so checking if it has zero lenght in the VAR]
+if [[ -n $VAR ]] [['-n' means not zero lenght] so checking if it not a zero lenght in the VAR]
+if [[ dog < cat ]] [This is a less than sort order]
+if [[ dog > cat]  [This is a greater than sort order]
+-------------------------------------
+--------------EXAMPLE----------------
+File Conditions ------->
+-e [if the file exists]
+-f [if a file exists and is a file]
+-d [if a file exists and is a directory]
+-c [if a file exists and is a character device]
+-b [if a file exists and is a block device]
+-p [if a file exists and is named 'pipe']
+-S [if a file exists and is a socket
+-L [if a file exists and is a symbolic link]
+-g [if a file exists and has the SGID bit set]
+-u [if a file exists and has the SUID bit set]
+-r [if a file exists and is readable by the current user]
+-w [if a file exists and is writable by the current user]
+-x [if a file exists and is executable by the current user]
+-s [if a file exists and has a size larger than zero bytes]
+-nt [if a file is newer than another]
+-ot [if a file is older than another]
+-ef [if two files have the same inode numbers]
+-------------------------------------
 --------------EXAMPLE----------------
 #!/bin/bash
 
@@ -174,3 +203,4 @@ fi
 
 if you type: ./numericscript.sh 5 1 [this is the way you can check if the script is working]
 -------------------------------------
+
