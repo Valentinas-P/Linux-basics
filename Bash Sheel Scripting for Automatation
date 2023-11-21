@@ -1,5 +1,6 @@
--- Linux System Engineer: Bash Sheel Scripting for Automatation -- 2023
-
+-----------------------------------------------------------------------------------------------------
+-- Linux System Engineer: Bash Sheel Scripting for Automatation -- 2023 -----------------------------
+-----------------------------------------------------------------------------------------------------
 2 methods of using debugging in Linux:
 
 1. bash -x ~/bin/script.sh [--> script.sh is the file name of the [script]] (uses the debugger for entire of the script)
@@ -101,3 +102,21 @@ done
 shift $((OPTIND-1))
 echo '$1 is' "$1"
 -------------------------------------
+
+-----------------------------------------------------------------------------------------------------
+------------------------------------ Outputting data from the script --------------------------------
+-----------------------------------------------------------------------------------------------------
+
+echo "data" > file.txt ---> this ">" symbol means to overwrite to the file.txt
+echo "data" | tee file.txt [Displaying on the screen and overwriting a file "use 'tee' command"] 
+echo "data" >> file.txt ---> this ">>" symbol means to append a file
+echo "data" | tee -a file.txt [Displaying on the screen and appending a file "use 'tee -a' command]
+
+------------- Create temporary file ------------>
+
+tmpfile=$(mktemp -t script.XXXXXX)
+echo "message" >> $tmpfile
+
+------------- Create unique file names with template ------>
+mktemp -t script.XXXXXX
+/tmp/script.J0chLz [Outcome example]
