@@ -120,3 +120,28 @@ echo "message" >> $tmpfile
 ------------- Create unique file names with template ------>
 mktemp -t script.XXXXXX
 /tmp/script.J0chLz [Outcome example]
+
+-----------------------------------------------------------------------------------------------------
+------------------------------------ Bash Scripting Logic -------------------------------------------
+--------------EXAMPLE--------------------------------------------------------------------------------
+if, else if, else conditional ----->
+
+if <condition> ;then
+  <run code>
+elif <condition> ;then
+  <run code>
+else
+  <run code>
+fi
+-------------------------------------
+--------------EXAMPLE----------------
+Conditional flow with case --------->
+
+case $AGE in
+        [1-9]) echo "You are quite young" ;;& [it checks condition and if the condition is true it doesn't terminates because of '&' symbol, but it carries on with another condition [5-9].]
+        [5-9]) echo "Time for elementary school" ;; [this would check if condition is true or not and it terminates no matter what condition it is]
+       1[0-9]) echo "Time for middle school" ;& [it checks if condition is true and continues with rest of it]
+   [2-9][0-9]) echo "You are an adult" ;;
+            *) echo "That doesn't seem to be an age" [if any of the conditions didn't match then displays this message]
+esac
+-------------------------------------
