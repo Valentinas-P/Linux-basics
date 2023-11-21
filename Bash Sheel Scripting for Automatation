@@ -208,7 +208,74 @@ if you type: ./numericscript.sh 5 1 [this is the way you can check if the script
 ------------------------------------ Bash Loops Logic -----------------------------------------------
 --------------EXAMPLE--------------------------------------------------------------------------------
 For Loop Syntax -------->
+
 for item in <list> ; do
     <work on $item>
 done
 -------------------------------------
+Static list ----------->
+
+for item in 1 2 3 4 5 ;do
+    echo "$item"
+done
+-----------------------
+Dynamic List Using seq --->
+
+for item in $(seq 1 10) ;do
+    echo "$item"
+done
+---------------------------
+Dynamic List Using Parameter Expansion (better version) --->
+
+for item in {1..10} ;do
+  echo "$item"
+done
+---------------------------
+Loop through Array Indices ---->
+
+array=(one two three) [this is the array]
+
+for i in $(seq 0 $(( ${#array[@]} - 1)) ) ;do [This '${#array[@]}' means get the number of Array items] [[$((          - 1))] This means substract one], Next '$(seq 0' ---> Create List from 0 to #(number of array items) of items minus one
+        echo "${array[$i]}" [Now each iteration that index numbers assigned, to the variable named 'i' we use that to access the array items specifically]
+done
+--------------------------------
+For Loop Syntax example ------>
+
+for item in {1..10000} ;do
+      if [[ $item = 100 ]] ;then
+            break;
+      fi
+done
+-------------------------------
+While Loop Syntax ----------->
+
+while [ condition ] ;do
+       <Do stuff>
+done
+------------------------------
+While Infinite Loop Syntax ----------->
+
+while true ; do
+    if [[ condition ]] ; then
+           break;
+    fi
+done
+------------------------------
+While Loop with Condition (Example) ----------->
+
+i='0'
+while [ $i -lt 4 ] ;do
+       echo "$i is still less than 4"
+        ((i++))
+done
+------------------------------
+While Read Loop Syntax (Example) ----------->
+
+while IFS= read -r LINE; do
+       echo "$LINE"
+done < "$1"
+------------------------------
+
+-----------------------------------------------------------------------------------------------------
+------------------------------------ Real-World Examples --------------------------------------------
+--------------EXAMPLE--------------------------------------------------------------------------------
