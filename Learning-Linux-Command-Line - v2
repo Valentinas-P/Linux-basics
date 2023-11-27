@@ -2,5 +2,15 @@
 ---------------------------- Learning #Linux Command Line - 2023 ------------------------------------
 -----------------------------------------------------------------------------------------------------
 
+Commands ¬ Are programs that take a particular action
+Options ¬ Tell the command how to operate, often begin with a dash or minus sign (like -e or -s [commonly used by one lettter or number])
+Options continue ¬ It also can have multiple options like e.g [ ls -l -a -h] best option: [ls -lah] the order doesn't matter it can be even [ls -ahl (it does the same action)]
+Options continue v-3 ¬ Having options with '--' means it can't be combined together, it must have space to add another option.
+Arguments ¬ This is where it tells command what part to operate on, usually its a file or path or set of files or directories.
 
+[---------- General Commmand Syntax ----------
+command     option(s)    argument(s)
 
+  ls          -l            
+  sort        -u          users.txt
+---------------------------------------------]
