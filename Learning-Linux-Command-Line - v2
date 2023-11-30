@@ -72,4 +72,12 @@ stat - display file status
             (example how it would look)
                     Working directory: /home/scott, relative path: '..', Results abosulte path: '/home'
                     Working directory: /home/scott/Documents, relative path: '..', Results abosulte path: '/home/scott'
+
+- Tilde Expansion
+      ¬ The tilde character '~' refers to the current user's home directory
+      ¬ My documents (and your documents) are at the path '~/Documents'
+      ¬ The shell expands the character ~ to the path of the user's home directory
+            (example how it would look)
+                    '~/Documents' -> /home/scott/Documents
+                    '~/Documents' -> /home/youruser/Documents
 ---------------------------------------------------]
