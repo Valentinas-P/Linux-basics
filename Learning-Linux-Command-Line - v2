@@ -14,3 +14,13 @@ command     option(s)    argument(s)
   ls          -l            
   sort        -u          users.txt
 ---------------------------------------------]
+
+Text Navigation Shorcuts for Command Line ---:
+Ctrl-U (^U) ¬ Delete from cursor to line start
+Ctrl-K (^K) ¬ Delete from cursor to line end
+Ctrl-Shift-C (Ctrl^C) ¬ Copy selected text to clipboard
+Ctrl-Shift-V (Ctrl^V) ¬ Paste text from clipboard
+Ctrl-R (Ctrl-R) ¬ Search command history
+Ctrl-C (Ctrl-C) ¬ Cancel command
+----------------------------------------------
+
