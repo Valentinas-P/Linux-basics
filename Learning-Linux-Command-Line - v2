@@ -24,3 +24,52 @@ Ctrl-R (Ctrl-R) ¬ Search command history
 Ctrl-C (Ctrl-C) ¬ Cancel command
 ----------------------------------------------
 
+-----------------------------------------------------------------------------------------------------
+---------------------------- Files, Directories and Permissions -------------------------------------
+-----------------------------------------------------------------------------------------------------
+
+[---------- Commands for file information ----------
+file - determine file type 
+stat - display file status
+---------------------------------------------------]
+
+[---------- Notable File System Directories ----------
+- File system root: '/'
+      ¬ Contains all other directories
+      ¬ Highest level of the file system hierarchy
+
+- User home directories: /home
+      ¬ Location where each user's personal files are stored
+      ¬ Each user has their own directory within /home/
+      ¬ In Bash and many other shells, each user's own home directory is represented by the tilde '~' character
+      ¬ The home directory often contains subdirectories like Documents, Downloads and Pictures
+
+¬ Common configuration files: '/etc'
+¬ Common programs or commands: /bin,/sbin
+¬ Shared libraries and modules stored: '/lib'
+¬ Standard location for mounting other file systems: '/mnt,/media'
+¬ Kernel and system information: '/dev,/proc,' and '/sys'
+---------------------------------------------------]
+
+[---------- Paths on Linux ----------
+¬ A path represents the location of a file or directory
+¬ Paths use the slash character '/' as a separator between directory or file names
+- Paths can be absolute or relative
+      Abosulute:
+      ¬ Begins from the root of the file system
+      ¬ Defines an explicit location on the file system
+            (example how abolute path looks)
+                     /home/scott/      ---> absolute path to scott, a slash '/' at the beginning indicates an absolute path
+                     /home/scott/Documents ---> absolute path to documents
+      Relative:
+      ¬ Begin from the current working directory
+      ¬ If the current working directory changes, the path of it changes also
+            (example how relative path looks)
+                    Working directory: /home/scott, Relative Path: 'Documents', How it would look: /home/scott/Documents
+                                      IMPORTANT: relative path doesn't have '/' in the front that would it makes relative path
+
+      ¬ The name '..' refers to the parent directory of the current working directory
+            (example how it would look)
+                    Working directory: /home/scott, relative path: '..', Results abosulte path: '/home'
+                    Working directory: /home/scott/Documents, relative path: '..', Results abosulte path: '/home/scott'
+---------------------------------------------------]
