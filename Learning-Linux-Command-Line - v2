@@ -81,3 +81,44 @@ stat - display file status
                     '~/Documents' -> /home/scott/Documents
                     '~/Documents' -> /home/youruser/Documents
 ---------------------------------------------------]
+
+[---------- Create and remove directories ----------
+mkdir [name] ¬ To create a directory
+mkdir [name]/[name1] ¬ To create a directory inside [name] of [name1]
+rmdir ¬ To delete a directory
+rmdir [name]/[name1] ¬ Deletes directory [name1] inside of [name]
+---------------------------------------------]
+
+[---------- Copy, move, and delete files and directories ----------
+- Copy Files
+      cp [filename] [filename2] ¬ [filename] is the file we want to copy, [filename2] is the file where we want to copy
+- Move Files
+      mv ¬ To move a file or to rename a file if you move the current file in the same directory
+      mv [filename] animals/cat ¬ This command will move a file to the directory of cat inside animals directory
+      mv [filename] animals . ¬ This command will move the file name in the current working directory or the current location path
+      mv .txt* animals/cat ¬ This command will move everything related to txt from the current directory to the cat directory
+- Delete Files
+      rm [filename].txt ¬ This command will delete a file
+      rm [filename?].txt ¬ Delete file names poems but only if it has an argument/number in the end e.g. poems5.txt [This file would be deleted]
+      rm -r ¬ This command used to delete files recursively it progress through the path till it finds the directory and deletes it
+------------------------------------------------------------------]
+
+[---------- Find Files from The Command Line ----------
+find . -name "peo*" ¬ This command is looking at current path directory, that's starts with [peo] it uses fild card in the end which it will show all the file names starting with [poe]
+find ~/[yourdirectory] -name [*name*"] ¬ This command will look in the specified directory with start and end of [name], this will show everything after and before [name]
+------------------------------------------------------]
+[---------- Understand User Roles and Sudo ----------
+su ¬ Command to switch from one user to another use 'it will ask for the password', e.g 'su bob'
+sudo ls /root ¬ Command to switch from user to root's privileges temporary, this will show all listed files in the root directory
+sudo -k ¬ Command to remove root privileges
+sudo -s ¬ Command to gain root privileges
+----------------------------------------------------]
+
+[---------- Understanding File Permissions ----------
+            [rwx]-user[rwx]-group[rwx]-others file1
+r ¬ Read File
+w ¬ Write File
+x ¬ Execute File
+
+        
+----------------------------------------------------]
