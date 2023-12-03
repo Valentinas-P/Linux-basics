@@ -116,9 +116,20 @@ sudo -s ¬ Command to gain root privileges
 
 [---------- Understanding File Permissions ----------
             [rwx]-user[rwx]-group[rwx]-others file1
-r ¬ Read File
-w ¬ Write File
-x ¬ Execute File
+r ¬ Read File[4]
+w ¬ Write File[2]
+x ¬ Execute File[1]
 
+chmod ¬ Command changes the permission mode
+chown & chgrp ¬ Commands to change the file's owner and group
+
+- Two methods to represent permissions:
+    Octal notation (like 755, 644, and 777)
+        chmod 777 test.sh [This will give permission to user,group and other to 'execute, read and write to the file']
+    Symbolic notation (like a=r, g+w, and o-x)
+        User(u), Group(g), Others(o), and All(a) [e.g. u+rwx [user read,write, execute] or g=r [group just read], o-rwx [Other takes away read, write, execute permission]
+        + ¬ Adds permissions
+        - ¬ Takes permissions
+        = ¬ Resets permissions to match a new permission mode
         
 ----------------------------------------------------]
