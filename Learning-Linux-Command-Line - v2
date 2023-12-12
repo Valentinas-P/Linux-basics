@@ -184,3 +184,13 @@ tac -
 tr -
 ¬ Translates or modifies individual characters according to parameters
 --------------------------------------------------------------]
+[---------- Edit text with Vim ----------
+commands -
+i ¬ Insert at cursor location
+I ¬ Insert at beginning of line
+o ¬ Insert on following line
+Esc ¬ Enter command line
+Esc : w ¬ Save file
+Esc : w q ¬ Save and exit
+Esc : q ! ¬ Exit without saving
+----------------------------------------]
