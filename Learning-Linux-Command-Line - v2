@@ -133,3 +133,26 @@ chown & chgrp ¬ Commands to change the file's owner and group
         = ¬ Resets permissions to match a new permission mode
         
 ----------------------------------------------------]
+
+-----------------------------------------------------------------------------------------------------
+---------------------------- Common Command-Line Tasks and Tools -------------------------------------
+-----------------------------------------------------------------------------------------------------
+
+Pipes ¬ Take the output of one command and send it to another
+      e.g ¬ cat users.txt | sort -u | ... --> It's just example [ '|' this is the pipe]
+      How to use it: echo "Hello world this is from command line" | wc ---> This will print 1, 6, 34 [1 = one line, 6 words, and 34 characters] 
+
+[---------- Tools for Text ----------
+cat -
+¬ Concatenate means to link together.
+¬ Can be used to ouput text file contents to the screen or to another program.
+head, tail -
+¬ Shows the first [10] lines of the file ---> head -n10 filename.txt.
+¬ Shows the last [10] lines of the file ---> tail -n10 filename.txt.
+e.g. cat filename.txt | cat -n | tail -n5 ---> shows filename.txt what's inside, applies number for each line and then prints out the last 5 lines in the file.
+less -
+¬ Displays text one page or screenful at a time and provides nagivation controls.
+------------------------------------]
+[---------- Search for text in files and streams with grep ----------
+
+--------------------------------------------------------------------]
