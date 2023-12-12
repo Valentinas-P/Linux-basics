@@ -154,5 +154,27 @@ less -
 ¬ Displays text one page or screenful at a time and provides nagivation controls.
 ------------------------------------]
 [---------- Search for text in files and streams with grep ----------
-
+grep -
+¬ The grep command searches files for matching patterns
+¬ It's case sensitive command
+e.g. cat filename.txt | grep "now" ---> This will search the word 'now' from filename.txt
+e.g. grep -in "The" poems.txt ---> This will include all the words starting with 'the'
+e.g. grep -vi "The" poems.txt ---> This will not include the words that start with 'the'
+e.g. grep -E "[hijk]" poems.txt ---> This will look in words that have letter of 'h,i,,k'
+e.g. grep -E "\w{6,}" poems.txt ---> This will look for words that has 6 characters in the word
 --------------------------------------------------------------------]
+[---------- Manipulate text with awk, sed, and sort ----------
+awk -
+¬ Often used ot extract specific text from a file according to a rule
+¬ awk programs can be written at the command line or stored in a file
+  e.g. awk '{print $2 "\t" $1}' simple.txt ---> This will print out two arguments $2 and $1
+sed -
+¬ Is a stream editor
+¬ Often used for modifying text in a command pipeline or in place
+  e.g. sed s/Orange/Red/ simple.txt ---> This command will change everything from word 'Orange' to 'Red' [/s stands for substitute]
+sort -
+¬ A command to sort in alphabetical order
+¬ sort -k2 simple.txt ---> It means to sort a file in a 2nd column
+¬ sort -k2 -n simple.txt ---> it means to sort a file in a 2nd column but in numeric sort
+¬ sort -u simple.txt ---> It ignores the duplicates if there're multiple similar lines
+--------------------------------------------------------------]
