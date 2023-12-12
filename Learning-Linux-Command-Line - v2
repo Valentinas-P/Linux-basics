@@ -177,4 +177,10 @@ sort -
 ¬ sort -k2 simple.txt ---> It means to sort a file in a 2nd column
 ¬ sort -k2 -n simple.txt ---> it means to sort a file in a 2nd column but in numeric sort
 ¬ sort -u simple.txt ---> It ignores the duplicates if there're multiple similar lines
+rev -
+¬ Prints text in reverse sequence
+tac -
+¬ Concatenates or displays files in reverse
+tr -
+¬ Translates or modifies individual characters according to parameters
 --------------------------------------------------------------]
