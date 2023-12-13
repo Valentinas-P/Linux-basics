@@ -194,3 +194,21 @@ Esc : w ¬ Save file
 Esc : w q ¬ Save and exit
 Esc : q ! ¬ Exit without saving
 ----------------------------------------]
+[---------- Working with tar and zip archives ----------
+Tape archives -
+¬ Put many files together into one file
+¬ .tar files are common way to package and distribute software and data
+¬ Data compression is optional
+¬ Compressed formats: .tar.gz,.tgz,.tar.bz2
+    e.g.; tar -cvf myfiles.tar filename.txt ---> ['c' letter means to create an archive, 
+                                                  'v' tells tar to be verbose that is to end each file that gets added to the archive
+                                                  'f' tells the tar to output the archive to a file]
+
+    e.g.: tar -caf myfiles.taz.gz filename.txt ---> ['a' tells the tar to figure it out what kids of compression to use based of the file extenstion in this e.g. is 'gz']
+    e.g.: tar -xf myfiles.tar ---> ['x' stands for extract and 'f' tells the tar the to output the archive]
+    e.g.: tar -xf myfiles.tar.gz -C your/directory --> ['C' stands for in which directory the archive should be moved]
+
+Zip -
+    e.g.: zip -r zip_file_name.zip your/directory/to/zip/it[it can be relative path or absolute path]
+    e.g.: unzip file_name.zip ---> This command will upzip all the file from the zip file.
+-------------------------------------------------------]
