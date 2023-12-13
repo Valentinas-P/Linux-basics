@@ -211,4 +211,5 @@ Tape archives -
 Zip -
     e.g.: zip -r zip_file_name.zip your/directory/to/zip/it[it can be relative path or absolute path]
     e.g.: unzip file_name.zip ---> This command will upzip all the file from the zip file.
+    e.g.: unzip file_name.zip -d your/directory ---> ['d' this is used for unpacked destination/location]
 -------------------------------------------------------]
