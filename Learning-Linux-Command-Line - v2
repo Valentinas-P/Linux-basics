@@ -213,3 +213,21 @@ Zip -
     e.g.: unzip file_name.zip ---> This command will upzip all the file from the zip file.
     e.g.: unzip file_name.zip -d your/directory ---> ['d' this is used for unpacked destination/location]
 -------------------------------------------------------]
+
+-----------------------------------------------------------------------------------------------------
+---------------------------- A Peek at Some More Advanced Topics ------------------------------------
+-----------------------------------------------------------------------------------------------------
+
+[---------- Find information about your Linux distribution ----------
+ls -l /etc/*release ---> This command will show two files which are related to System information
+cat /etc/*release ---> This command will show information about the distribution system
+
+uname -a ¬ This command will show all information about the system
+uname -r ¬ This command will show the exact kerner and the version is used
+--------------------------------------------------------------------]
+[---------- Find system hardware and disk information ---------------
+free -h ¬ This will show the memory the server/device have
+cat /proc/cpuinfo ---> This command is used to check the cpu information
+df -h ¬ This command used to check the space of the hardware
+ip a ¬ Inforamation used for networking ['a' stands for address]
+--------------------------------------------------------------------]
