@@ -104,7 +104,7 @@ rmdir [name]/[name1] ¬ Deletes directory [name1] inside of [name]
 ------------------------------------------------------------------]
 
 [---------- Find Files from The Command Line ----------
-find . -name "peo*" ¬ This command is looking at current path directory, that's starts with [peo] it uses fild card in the end which it will show all the file names starting with [poe]
+find . -name "peo*" ¬ This command is looking at current path directory, that's starts with [peo] it uses wild card in the end which it will show all the file names starting with [poe]
 find ~/[yourdirectory] -name [*name*"] ¬ This command will look in the specified directory with start and end of [name], this will show everything after and before [name]
 ------------------------------------------------------]
 [---------- Understand User Roles and Sudo ----------
