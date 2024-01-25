@@ -33,6 +33,7 @@ sudo groupadd [groupname] - Adds the group to the system.
 sudo groupdel [groupname] - Deletes the group from the system. You must give sudo permission to be able to delete the group.
 cat /etc/group - Shows the current groups information in the system.
 sudo usermod -G [groupname] [username] - Adds selected user to the group.
+sudo userdel [username] [groupname] - Deletes the selected user from selected specific group
 
 Octals values of file permission & directories:
 
