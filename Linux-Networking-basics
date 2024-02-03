@@ -51,10 +51,18 @@ Session Layer - Communication sessions consist of requests and responses that oc
                 Instead, it is the phase of data transmission where the network assesses where the data goes. A transmission path has been identified
                 and then locks that transmission path in place by confirming with the receiving node that the data is incoming.
 
-Transport Layer -
+Transport Layer - The transport layer refers to data as 'Segments'. The transport layer is responsible for the delivery of Segments between end-users.
+                  Layer 4 also acknowledges successful segment transmission and re-transmits if errors are found.
 
-Network Layer -
+Network Layer - The network layer is responsible for delivering packets (data) from one host to another on different networks.
+                The Network layer will also take care of packet routing by selecting the shortest possible route from the number of routes available.
+                Sender and receiver IP addresses are placed in the header of this packet.
 
-Data Link Layer -
+Data Link Layer - The Data Link layer oversees the message delivery between devices. The primary function of the Data Link layer is to ensure data
+                  is error-free from one device to another across the physical layer. Once a packet (data) arrives in a Network, the DLL transmits
+                  it to the host using its MAC address.
 
-Physical Layer -
+Physical Layer - he Physical Layer is concerned with the physical infrastructure or the actual physical connection between devices.
+                 The data within the Physical layer is known as Bits. These Bits are transmitted from one node to the next.
+                 When the Physical layer receives data, the incoming signal is converted into 0’s and 1’s and then forwarded to the DLL so that the
+                 frame can be pieced together.
