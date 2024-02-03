@@ -39,10 +39,22 @@ Examples of network topolgoy;
 -----------------------------------------------------------------------------------------------------
 What is OSI model? - The Open Systems Interconnection (OSI) model is a mental framework that describes how data travels between all the network components.
 
-Application Layer -
-Presentation Layer -
-Session Layer -
+Application Layer - Layer 7, or the Application layer, is the top layer of the OSI model. This layer is what users will typically interact with.
+                    Layer 7 manages the communications between the application, such as a web browser or Office 365, and the network.
+
+Presentation Layer - Layer 6, or the Presentation Layer, is all about representing data. So, for example, if layer 7 is responsible for presenting
+                     information in a readable format, layer 6 is responsible for converting that readable information into 1’s and 0’s that the 
+                     computer understands. Or, when the presentation layer receives the 1’s and 0’s data from the network, it is converted back
+                     to a readable format for the application layer.
+
+Session Layer - Communication sessions consist of requests and responses that occur between applications. The session layer does not transmit data.
+                Instead, it is the phase of data transmission where the network assesses where the data goes. A transmission path has been identified
+                and then locks that transmission path in place by confirming with the receiving node that the data is incoming.
+
 Transport Layer -
+
 Network Layer -
+
 Data Link Layer -
+
 Physical Layer -
