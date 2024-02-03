@@ -12,8 +12,8 @@ World Wide Web (WWW) - The following that uses WWW.
                           - Streaming video (Youtube, Netflix, etc.)
 
 Five Main Types of Networks:
-1. Local Area Network (LAN) -
-2. Wireless Local Area Network (WLAN) -
-3. Wide Area Network (WAN) -
-4. Virtual Local Area Network (VLAN) -
-5. Virtual Private Network (VPN) -
+1. Local Area Network (LAN) - A local area network or LAN is a collection of devices connected in one physical location, such as a building, office, or home.
+2. Wireless Local Area Network (WLAN) -  wireless local area network or WLAN is a network that uses radio signals rather than direct cable connections to exchange information. The most commercially popular frequency bands wireless networks use are 2.4 and 5 GHz.
+3. Wide Area Network (WAN) -  Wide Area Networks or WAN is similar to a LAN but operates beyond the geographic scope of a LAN. This can be between multiple buildings, properties, cities, states and countries.
+4. Virtual Local Area Network (VLAN) - While traditional infrastructure is physical, many networks today are virtualised. Virtualisation creates a simulated or virtual computing environment compared to a physical one.
+5. Virtual Private Network (VPN) - A Virtual Private Network or VPN extends a private network (such as your office or enterprise network) over a public one, typically the internet. It encrypts data, hides your actual IP address, and bounces off a network of secured servers.
