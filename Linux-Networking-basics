@@ -21,3 +21,20 @@ Five Main Types of Networks:
    or virtual computing environment compared to a physical one.
 5. Virtual Private Network (VPN) - A Virtual Private Network or VPN extends a private network (such as your office or enterprise network) over a public one,
    typically the internet. It encrypts data, hides your actual IP address, and bounces off a network of secured servers.
+
+-----------------------------------------------------------------------------------------------------
+---------------------------- Network Topologies -----------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+What is network topology? - Network topology refers to how the links and nodes of a network are arranged to relate to each other.  Nodes are devices that
+                            send and receive information, and links are what connect nodes, either wired or wireless.
+
+Examples of network topolgoy;
+                            1. Ring
+                            2. Bus
+                            3. Star
+                            4. Mesh
+
+-----------------------------------------------------------------------------------------------------
+---------------------------- Networking Fundamentals - Module 2 -------------------------------------
+-----------------------------------------------------------------------------------------------------
+
