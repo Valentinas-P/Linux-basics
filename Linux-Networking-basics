@@ -35,7 +35,7 @@ Examples of network topolgoy;
                             4. Mesh
 
 -----------------------------------------------------------------------------------------------------
----------------------------- Networking Fundamentals - Module 2 -------------------------------------
+---------------------------- Linux Networking # The OSI Model ---------------------------------------
 -----------------------------------------------------------------------------------------------------
 What is OSI model? - The Open Systems Interconnection (OSI) model is a mental framework that describes how data travels between all the network components.
 
@@ -66,3 +66,23 @@ Physical Layer - he Physical Layer is concerned with the physical infrastructure
                  The data within the Physical layer is known as Bits. These Bits are transmitted from one node to the next.
                  When the Physical layer receives data, the incoming signal is converted into 0’s and 1’s and then forwarded to the DLL so that the
                  frame can be pieced together.
+
+
+-----------------------------------------------------------------------------------------------------
+---------------------------- Linux Networking # The TCP/IP Suite ------------------------------------
+-----------------------------------------------------------------------------------------------------
+
+1. Application Layer - It combines the functionalities of the Session Layer, the Presentation Layer and the Application Layer of the OSI model.
+                       The Application Layer provides the interfaces and protocols that allow the user to interact with the application.
+                       When one Application Layer protocol wants to communicate with another application layer, it forwards its data to the Transport Layer.
+                       It is also concerned with error handling and recovery of the message as a whole.
+
+2. Transport Layer - The Transport Layer is responsible for the reliability, flow control, and correction of data that is being sent over the network.
+                     The two protocols used in the transport layer are the User Datagram Protocol (UDP) and Transmission control protocol (TCP).
+
+3. Internet Layer - The Internet Layer aligns with the Network layer defined in the OSI reference model.
+                    Provisions the logical addressing and routing of data packets using internet protocol like IPv4. It transmits data packets to the link layer.
+                    It reassembles the out-of-order packets when they reach the destination. It handles errors in the transmission of data packets and fragmentation of data packets.
+
+4. Network Access Layer - The Network Access layer is a combination of the Physical layer and Data Link layer defined in the OSI reference model.
+                          It defines how the data should be sent physically through the network.
