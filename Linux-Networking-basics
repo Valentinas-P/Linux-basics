@@ -86,3 +86,15 @@ Physical Layer - he Physical Layer is concerned with the physical infrastructure
 
 4. Network Access Layer - The Network Access layer is a combination of the Physical layer and Data Link layer defined in the OSI reference model.
                           It defines how the data should be sent physically through the network.
+
+Similarities between the OSI model and TCP/IP suite:
+- Both references are layered and logical models
+- Both define standards for networking
+- Both provide a framework for creating and implementing networking standards and devices
+- Both divide the network communication process into layers
+- Both models simplify the troubleshooting process by dividing complex functions into simpler components
+
+Differences between the OSI model and TCP/IP suite:
+- Different functionalities of upper layers: OSI = application, presentation, session layers | TCP/IP = application layer
+- Different functionalities of lower layers: OSI = data link, physical layers | TCP/IP = network access layer
+- Different routing protocols and standards layer: OSI = network layer | TCP/IP = internet layer
