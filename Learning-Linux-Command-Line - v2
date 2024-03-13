@@ -140,6 +140,8 @@ chown & chgrp ¬ Commands to change the file's owner and group
 
 Pipes ¬ Take the output of one command and send it to another
       e.g ¬ cat users.txt | sort -u | ... --> It's just example [ '|' this is the pipe]
+      Well what if I wanted to write the output of my command to two different streams? That's possible with the tee command:
+      $ ls | tee peanuts.txt ---> You should see the output of ls on your screen and if you open up the peanuts.txt file you should see the same information!
       How to use it: echo "Hello world this is from command line" | wc ---> This will print 1, 6, 34 [1 = one line, 6 words, and 34 characters] 
 
 [---------- Tools for Text ----------
