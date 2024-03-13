@@ -233,3 +233,8 @@ cat /proc/cpuinfo ---> This command is used to check the cpu information
 df -h ¬ This command used to check the space of the hardware
 ip a ¬ Inforamation used for networking ['a' stands for address]
 --------------------------------------------------------------------]
+-----------------------------------------------------------------------------------------------------
+---------------------------- Extra commands for linux important  ------------------------------------
+-----------------------------------------------------------------------------------------------------
+echo $HOME ---> Home its a standard environment for the user
+env --> It will show all the environments that are related to the bash and the current account.
